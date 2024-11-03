@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&family=Vampiro+One&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The History of Halloween</title>
+    <style>
+      /* General styles */
+      body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        color: #e2d8c9; /* Old Parchment color for text */
+        background-color: #1a1a1a; /* Dark Charcoal background */
+      }
+      h1,
+      h2 {
+        color: #ff7518; /* Pumpkin Orange */
+        text-align: center;
+      }
+      p {
+        line-height: 1.6;
+        max-width: 800px;
+        margin: auto;
+        padding: 1rem;
+      }
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 2rem;
+        text-align: center;
+      }
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%; /* Ensure body takes full height */
+      }
+
+      
+      /* Landing Section */
+      .landing {
+        padding: 50px 20px;
+        text-align: center;
+        background: url("https://i.pinimg.com/564x/13/d6/96/13d6963382229cdcb80fef65e4a95c2a.jpg")
+          no-repeat;
+        background-size: cover; /* Ensures the image covers the entire section */
+        background-position: center; /* Centers the image */
+        color: #ffffff;
+        width: 100%; /* Full viewport width */
+        height: 100%;
+        background-color: lightblue; /* Background color */
+      }
+      .landing h1 {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+        font-family: "Creepster", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .landing p {
+        font-size: 1.2rem;
+        font-family: "Creepster", system-ui;
+      }
+      .cta-button {
+        background-color: #9b3922; /* Blood Red */
+        color: #ff7518;
+        padding: 15px 30px;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 5px;
+        font-family: "Creepster", system-ui;
+      }
+      .cta-button:hover {
+        background-color: #0c0c0c;
+        color: #ff7518;
+      }
+
+      /* Section styles */
+      .section {
+        padding: 50px 20px;
+        position: relative;
+        font-family: "Vampiro One", system-ui;
+      }
+      .section:nth-child(even) {
+        background-color: #333333;
+      }
+      .section:nth-child(odd) {
+        background-color: #1a1a1a;
+      }
+      .section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+      #origins {
+        background: url("https://i.pinimg.com/564x/24/1c/09/241c09cdba26590b1cac930f907fe569.jpg") no-repeat center;
+        background-size: cover; /* Ensures the image covers the entire section */
+      }
+      #christianity {
+        background: url("https://i.pinimg.com/564x/bb/4f/5d/bb4f5d633e267b77e9cd3b417aec6c29.jpg") no-repeat center;
+        background-size: cover; /* Ensures the image covers the entire section */
+        color: white;
+      }
+
+      /* Timeline section */
+      #timeline {
+        background: url("https://i.pinimg.com/564x/7c/88/bb/7c88bbfc8f2e4ab642c06beb50e9c3f5.jpg") no-repeat center;
+        background-size: cover; /* Ensures the image covers the entire section */
+      }
+      .timeline {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .timeline-item {
+        width: 200px;
+        margin: 20px;
+        padding: 20px;
+        background-color: #9B3922;
+        border-radius: 5px;
+      }
+      .timeline-item:hover {
+        background-color: #ff7518;
+        color: #1a1a1a;
+      }
+      .timeline-item h3 {
+        font-size: 1.5rem;
+      }
+
+      /* Quiz and Trivia styles */
+      #trivia{
+        background: url("https://i.pinimg.com/564x/26/b5/2d/26b52d2efaa36c426cdf61e9cd44f1a7.jpg") no-repeat center;
+        background-size: cover; /* Ensures the image covers the entire section */
+      }
+      .quiz,
+      .trivia {
+        text-align: center;
+        padding: 30px;
+        background-color: #333333;
+        border-radius: 10px;
+        margin: 30px auto;
+        max-width: 600px;
+      }
+      .quiz h3,
+      .trivia h3 {
+        font-size: 1.8rem;
+        color: #ff7518;
+      }
+      .quiz button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #b22222;
+        color: #ffffff;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+      .quiz button:hover {
+        background-color: #ff7518;
+      }
+      .trivia {
+        background: url("https://i.pinimg.com/564x/8e/a3/5a/8ea35a275f8d4042b4b491d237f42065.jpg") no-repeat center;
+        background-size: cover; /* Ensures the image covers the entire section */
+      }
+/*       #quiz {
+        background: url("https://i.pinimg.com/564x/10/df/9f/10df9f8074116dd8c9d3af3462bdf953.jpg") no-repeat center;
+        background-size: cover; /* Ensures the image covers the entire section */
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- Landing Section -->
+    <section class="landing">
+      <h1>Unveil the Origins of Halloween</h1>
+      <p>
+        Step back in time to explore Halloween’s haunting roots, from ancient
+        rituals to modern-day traditions.
+      </p>
+      <button
+        class="cta-button"
+        onclick="document.getElementById('origins').scrollIntoView({ behavior: 'smooth' });"
+      >
+        Explore Halloween’s Dark Past
+      </button>
+    </section>
+
+    <!-- Origins of Halloween Section -->
+    <section class="section" id="origins">
+      <div class="container">
+        <h2>Where it All Began: The Celtic Festival of Samhain</h2>
+        <p>
+          Halloween’s story began with the ancient Celts, who celebrated Samhain
+          to mark the end of harvest and welcome winter. Bonfires lit up the
+          night as people donned disguises to avoid the gaze of wandering
+          spirits.
+        </p>
+      </div>
+    </section>
+
+    <!-- Influence of Christianity Section -->
+    <section class="section" id="christianity">
+      <div class="container">
+        <h2>The Medieval Transformation</h2>
+        <p style="background-color: #481E14;">
+          In the Middle Ages, Halloween was shaped by Christian observances like
+          All Saints’ Day and All Souls’ Day. Communities honored the dead,
+          giving rise to customs such as soul cakes and early trick-or-treating.
+        </p>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="section" id="timeline">
+      <div class="container">
+        <h2>Halloween Through the Ages</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>500 B.C.</h3>
+            <p>Samhain, the origin of Halloween, is celebrated by the Celts.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>8th Century</h3>
+            <p>Christian influences transform Samhain into All Saints' Day.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>1840s</h3>
+            <p>Irish immigrants bring Halloween traditions to America.</p>
+          </div>
+          <!-- Add more timeline items as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Trivia Section -->
+    <section class="section" id="trivia">
+      <div class="trivia">
+        <h3>Did You Know?</h3>
+        <p style="background-color: black;">
+          Halloween was once a time to foretell the future, with games
+          predicting marriage and fortunes!
+        </p>
+        <!-- More trivia facts -->
+      </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="section" id="quiz">
+      <div class="quiz">
+        <h3>How Well Do You Know Halloween?</h3>
+        <p>Test your knowledge with this fun quiz by BuzzFeed!</p>
+        <button
+          onclick="window.open('https://www.buzzfeed.com/bendzialdowski/halloween-trivia-quiz', '_blank');"
+        >
+          Take the Quiz
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
